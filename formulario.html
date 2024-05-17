@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <form action="controlador" method="get">
+  <form action="controlador" method="post" enctype="multipart/form-data">
     <div><label for="number">Ingrese su Edad:</label></div>
     <input type="number" step="1" min="0" max="20" value="17" name="Edad" />
 
@@ -35,44 +35,48 @@
                     <div></div>
                     <button type="submit">Guardar Numero</button>
                     <div><label for="text">ingrese su ciudad</label></div>
-
-                    <div><select name="ciudad" id="ciudad" disabled>
-                        <option value="1">bucaramanga</option>
-                        <option value="2" selected>giron </option>
-                        <option value="3">florida</option>/select>
+                    <div><select name="ciudad" id="ciudad">
+                        <option value="1">Bucaramanga</option>
+                        <option value="2" selected>Girón </option>
+                        <option value="3">Floridablanca</option>/select>
                         <button type="submit">Guardar</button>
-
-                        <div>
-                        <label for="sexo">seleccione su sexo</label>
-                        <label class="radio-inline" for="sexo">seleccione su sexo
-                          <input type="radio" name="genero" value=Masculino">Masculino</label>
-                        <label class="radio-inline">
-                          <input type="radio" name="genero" value="Femenino">Femenino</label>
-                        </div>
-
-                        <div>
-                          <label for="Habilidades">seleccione su habilidad
-                            <input type="checkbox" name="Habilidades">HTML
-                        </div>
-                        <div>
-                          
-                            <input type="checkbox" name="Habilidades">JAVA
-                        </div>
-                        <div>
-                          
-                            <input type="checkbox" name="Habilidades">CLI
-                        </div>
-                        <div>
+                       
+                      <label for="sexo">selecione su sexo 
+                          <input type="radio" name="sexo"checked>Masculino
+                              <div>
+                                <input type="radio" name="sexo">Femenino
+                              </div>
+                      </label>
+                          </div>
+                          <div>
+                            <label for="habilidades" >Seleciones Su Habilidad
+                              <div>
+                                <input type="checkbox" name="Habilidades" checked value="GIT">GIT
+                              </div>
+                              <div>
+                                <input type="checkbox" name="Habilidades" checked value="CLI">CLI
+                              </div>
+                              <div>
+                                <input type="checkbox" name="Habilidades" checked value="HTML">HTML
+                              </div>
+                              <div>
+                                <input type="checkbox" name="Habilidades" checked value="CSS">CSS
+                              </div>
+                              <div>
+                                <input type="checkbox" name="Habilidades" checked value="JAVASCRIPT">JAVASCRIPT
+                              </div>
+                             <div>
+                              <input type="checkbox" name="Habilidades" checked value="PHP">PHP
+                             </div>
+                            </label>
+                          </div>
+                          <div>
+                            <label for="image">
+                            <input accept="image/png,image/jpeg" type="file">
+                            Elige varias imagenes
+                          </label>
+                          </div>
                         
-                            <input type="checkbox" name="Habilidades">PYTHON
-                        </label>
-                        </div>
-
-
-
-
-                    </div>
-
   </form>
 
 </body>
