@@ -2,41 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario</title>
 </head>
 
 <body>
-    <form action="controlador" method="get">
-        <div><label for="number">Ingrese su Edad:</label></div>
-        <input type="number" step="1" min="0" max="20" value="5" name="Edad" disabled />
+  <form action="controlador" method="get">
+    <div><label for="number">Ingrese su Edad:</label></div>
+    <input type="number" step="1" min="0" max="20" value="17" name="Edad" />
 
-        <div><label for="Nombre">Nombre:</label>
-            <div>
+    <div><label for="Nombre">Nombre:</label>
+      <div>
 
-                <div><input type="text" name="Nombre" required placeholder="Ingrese su Nombre" id="Nombre" autofocus
-                        autocomplete="off">
-                    <div>
-                        <div><input type="color">
-                            <div>
-                                <button type="submit">Guardar</button>
+        <div><input type="text" name="Nombre" pattern="[a-z][1,20]" required placeholder="Ingrese su Nombre" id="Nombre"
+            autofocus autocomplete="off">
+          <div>
+            <div><input type="color">
+              <div>
+                <button type="submit">Guardar</button>
 
-                                <div><label for="email">Ingrese su email:</label></div>
+                <div><label for="email">Ingrese su email:</label></div>
+                <div><input type="text" name="email" required placeholder="Ingrese su Email" id="email" autofocus
+                    autocomplete="off">
+                  <input type="text" id="email" name="email" inputmode="email" required placeholder="ingrese el email">
+                  <div></div>
+                  <button type="submit">Guardar Email </button>
 
-                                <div><input type="text" name="email" required placeholder="Ingrese su Email" id="email"
-                                        autofocus autocomplete="off"></div>
+                  <div><label for="Numero">Ingrese su Numero:</label></div>
+                  <div><input type="text" name="Numero" required placeholder="Ingrese su Numero" id="Numero" autofocus
+                      autocomplete="off">
+                    <div></div>
+                    <button type="submit">Guardar Numero</button>
+                    <div><label for="text">ingrese su ciudad</label></div>
 
-                                <button type="submit">Guardar Email</button>
+                    <div><select name="ciudad" id="ciudad" disabled>
+                        <option value="1">bucaramanga</option>
+                        <option value="2" selected>giron </option>
+                        <option value="3">florida</option>/select>
+                        <button type="submit">Guardar</button>
 
-                                <div><label for="number">Ingrese su Numero:</label></div>
+                        <div>
+                        <label for="sexo">seleccione su sexo</label>
+                        <label class="radio-inline" for="sexo">seleccione su sexo
+                          <input type="radio" name="genero" value=Masculino">Masculino</label>
+                        <label class="radio-inline">
+                          <input type="radio" name="genero" value="Femenino">Femenino</label>
+                        </div>
 
-                                <div><input type="number" name="number" required placeholder="Ingrese su Numero"
-                                        id="Numero" autofocus autocomplete="off"></div>
+                        <div>
+                          <label for="Habilidades">seleccione su habilidad
+                            <input type="checkbox" name="Habilidades">HTML
+                        </div>
+                        <div>
+                          
+                            <input type="checkbox" name="Habilidades">JAVA
+                        </div>
+                        <div>
+                          
+                            <input type="checkbox" name="Habilidades">CLI
+                        </div>
+                        <div>
+                        
+                            <input type="checkbox" name="Habilidades">PYTHON
+                        </label>
+                        </div>
 
-                                <button type="submit">Guardar Numero</button>
 
-    </form>
+
+
+                    </div>
+
+  </form>
 
 </body>
 
